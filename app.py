@@ -1,0 +1,30 @@
+# import necessary libraries
+import os
+from flask import (
+    Flask,
+    render_template,
+    jsonify,
+    request,
+    redirect)
+
+#################################################
+# Flask Setup
+#################################################
+app = Flask(__name__)
+
+#################################################
+# Maps Setup
+#################################################
+mapkey = os.environ.get('MAPKEY', '') or "CREATE MAPKEY ENV"
+
+#################################################
+# Database Setup
+#################################################
+
+from flask_sqlalchemy import SQLAlchemy
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', '') or "sqlite:///db.sqlite"
+
+
+# app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', '')
+db = SQLAlchemy(app)
+
