@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>UFO Finder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.4.1/darkly/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Orbitron|Righteous|Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css">
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">DWM App
+            <!-- <img class="nav-ufo" src="static/images/ufo.svg"> -->
+            <img src="https://img.icons8.com/officel/80/000000/businessman.png">          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="hero text-center">
+      <h1>Digital Wealth Manager</h1>
+      <p>Talk to your wealth manager.....anytime......anywherre</p>
+    </div>
+    <div class="container">
+      <div class="row margin-top-50">
+        <div class="col-md-2">
+          <aside class="filters">
+            <div class="panel panel-default">
+              <div class="panel-heading">Filter Search</div>
+              <div class="panel-body">
+                <form>
+                  <div class="form-group">
+                    <ul class="list-group" id="filters">
+                      <li class="filter list-group-item">
+                        <label for="date">Enter a Date</label>
+                        <input class="form-control" id="datetime" type="text" placeholder="m/d/yyyy">
+                      </li>
+                    </ul>
+                  </div>
+                  <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+                </form>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div class="col-md-10">
+          <div id="table-area" class="">
+            <table id="ufo-table" class="table table-striped">
+              <thead>
+                <tr>
+                  <th class="table-head">Date</th>
+                  <th class="table-head">Ticker Symbol</th>
+                  <th class="table-head">Company Name</th>
+                  <th class="table-head">industry</th>
+                  <th class="table-head">Sector</th>
+                  <th class="table-head">Open</th>
+                  <th class="table-head">Close</th>
+                  <th class="table-head">High</th>
+                  <th class="table-head">Low</th>
+                  <th class="table-head">Volume</th>
+                  <!-- <video width="930" height="500" controls autoplay="" class="H_j_h l_e_g" data-automation="VideoPlayer_video_video" loop="" playsinline="" poster="https://ak2.picdn.net/shutterstock/videos/13519532/thumb/1.jpg"><source src="https://ak2.picdn.net/shutterstock/videos/13519532/preview/stock-footage-names-of-world-major-stock-exchanges-market-quotes-running-on-electronic-ticker.webm" type="video/webm"><source src="https://ak2.picdn.net/shutterstock/videos/13519532/preview/stock-footage-names-of-world-major-stock-exchanges-market-quotes-running-on-electronic-ticker.mp4" type="video/mp4"></video> -->
+                  <video width="930" height="500" autoplay="" class="H_j_h l_e_g" data-automation="VideoPlayer_video_video" loop="" playsinline="" poster="https://ak5.picdn.net/shutterstock/videos/30515275/thumb/1.jpg"><source src="https://ak5.picdn.net/shutterstock/videos/30515275/preview/stock-footage-stock-market-and-forex-price-chart-with-real-quotes-ticker-board-and-holographic-earth-map-new.webm" type="video/webm"><source src="https://ak5.picdn.net/shutterstock/videos/30515275/preview/stock-footage-stock-market-and-forex-price-chart-with-real-quotes-ticker-board-and-holographic-earth-map-new.mp4" type="video/mp4"></video>  
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <video width="600" height="600"autoplay="" class="H_j_h l_e_g" data-automation="VideoPlayer_video_video" loop="" playsinline="" poster="https://ak3.picdn.net/shutterstock/videos/20687383/thumb/1.jpg" style="transform: rotate(0deg); width: 100%;"><source src="https://ak3.picdn.net/shutterstock/videos/20687383/preview/stock-footage-stock-currency-exchange-business-background-v.webm" type="video/webm"><source src="https://ak3.picdn.net/shutterstock/videos/20687383/preview/stock-footage-stock-currency-exchange-business-background-v.mp4" type="video/mp4"></video>
+    <footer class="footer">
+      <span class="bottom">DWM App</span>
+    <marquee behavior="scroll" direction="left">To book an apppointment with one of our experienced wealth managers for private personal advise please click HERE or visit our website at www.digitalfinancialadvisor.com.... For technical support please call 1-866-400-500 9am to 5pm EST or email:techsupport@dwm.com.....</marquee>
+
+
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="static/js/data.js"></script>
+  <script src="static/js/app.js"></script>
+</body>
+
+</html>
